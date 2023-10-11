@@ -17,4 +17,10 @@ To get started with Temperature-converter, follow these steps:
 1. Clone the repository: git clone https://github.com/pro8806/Temperature-converter.git
 2. Navigate to the project directory: cd Temperature-converter
 3. Open the index.html file in your web browser.
-   
+# License 
+The Temperature-converter project is licensed under the Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+# Contact
+If you have any questions, suggestions, or feedback, please feel free to contact the project maintainer at pro8806(Priya gupta).
+
