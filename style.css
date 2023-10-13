@@ -1,103 +1,81 @@
-*{
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('bg.jpg.jpg');
     min-height: 100vh;
+    background-color: #ffffff;
+   background-image: url("bg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   /* background: linear-gradient(90deg, rgba(93, 99, 204, 1) 0%, rgba(245, 240, 242, 1) 100%, rgba(0, 212, 255, 1) 100%);*/
+   
+   font-family: monospace, sans-serif;
+    color: rgb(15, 13, 115);
 }
 
-.container{
-    max-width: 450px;
-    background: #232412;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.4);
-    font-family: sans-serif;
-    padding: 20px;
-
-}
-
-.title{
+.container {
+    background: rgba(72, 175, 141, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 85%;
+    max-width: 600px;
+    min-height: 300px;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap-reverse;
-    gap: 10px;
-}
-
-.Temperature-icon{
-    font-size: 45px;
-    color: #fff;
-}
-
-h1{
-    color: #fff;
-    letter-spacing: 1.2px;
-    font-size: 30px;
-}
-
-#celsius,#fahrenheit,#kelvin{
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 25px;
 }
 
-input{
-    flex: 5;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    border: none;
+.heading {
+    font-size: 32px;
+}
+
+.temp-container {
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 60%;
+    font-family: monospace;
+    padding: 5px;
     outline: none;
-    border-radius: 0 10px;
+    background: rgba(0, 212, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+    color: darkblue;
+    font-size: 18px;
 }
 
-/* For Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-innner-spin-button{
-    -webkit-appearance: none;
+input::placeholder {
+    color: #130608;
 }
 
-/* for Mozila firefox*/
-input{
-    -moz-appearance: textfield;
+
+/* Responsive CSS */
+@media (min-width: 600px) {
+    .container {
+        width: 70%;
+    }
+
+    input {
+        width: 50%;
+    }
 }
 
-.icon{
-    flex: 1;
-    height: 60px;
-    line-height: 60px;
-    padding: 0 5px;
-    text-align: center;
-    font-size: 30px;
-    background: #4d5964;
-    color: #fff;
-    border-radius: 0 8px 8px 0;
-}
+@media (min-width: 900px) {
+    .container {
+        width: 60%;
+    }
 
-.button{
-    margin-top: 25px;
-    text-align: center;
-}
-
-.button button{
-    border: none;
-    outline: none;
-    padding: 10px 30px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.button button:hover{
-    background: #fff;
+    input {
+        width: 40%;
+    }
 }
